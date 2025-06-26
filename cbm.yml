@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: cont8
-          image: yaseenbasha/cycle
+          image: yaseenbasha/basha
           ports:
             - containerPort: 80
 ---
