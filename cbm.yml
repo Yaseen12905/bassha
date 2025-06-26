@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myd
+  name: msyd
   labels:
-    app: cycle
+    app: basha
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: cycle
+      app: basha
   template:
     metadata:
       labels:
-        app: cycle
+        app: basha
     spec:
       containers:
         - name: cont8
@@ -23,11 +23,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mysvc7
+  name: mysvc9
 spec:
   type: NodePort
   selector:
-    app: cycle
+    app: basha
   ports:
     - port: 80
       targetPort: 80
